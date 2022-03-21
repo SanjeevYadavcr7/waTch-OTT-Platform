@@ -32,10 +32,10 @@ function PopularComponent() {
   };
 
   const handleYearChange = (year) => {
-    if (year == 'Year') setMovies(moviesList);
+    if (year === 'Year') setMovies(moviesList);
     else {
       const filteredMovies = moviesList.filter(
-        (movie) => getYear(movie) == year
+        (movie) => getYear(movie) === parseInt(year)
       );
       setMovies(filteredMovies);
     }

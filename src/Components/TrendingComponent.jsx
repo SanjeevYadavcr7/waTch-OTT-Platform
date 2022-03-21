@@ -14,7 +14,12 @@ function TrendingComponent() {
   return (
     <Wrapper>
       <Card1 onClick={() => getMovie(634649)}>
-        <Trending>#1 in Movies 🔥</Trending>
+        <Trending>
+          #1 in Movies{' '}
+          <span role='img' aria-labelledby='fire'>
+            🔥
+          </span>
+        </Trending>
         <Star>
           <FaStar />
           8.2/10
@@ -30,7 +35,12 @@ function TrendingComponent() {
         <Gradient />
       </Card1>
       <Card2 onClick={() => getMovie(508947)}>
-        <Trending className='none'>#3 in Anime 🚀</Trending>
+        <Trending className='none'>
+          #3 in Anime
+          <span role='img' aria-labelledby='rocket'>
+            🚀
+          </span>
+        </Trending>
         <Star>
           <FaStar />
           7.5/10
