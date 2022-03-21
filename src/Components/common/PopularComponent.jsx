@@ -111,7 +111,7 @@ const Grid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
   @media ${device.mobileL} {
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 `;
 

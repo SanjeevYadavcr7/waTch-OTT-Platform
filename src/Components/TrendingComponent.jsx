@@ -114,6 +114,7 @@ const Trending = styled.div`
   }
   @media ${device.mobileL} {
     margin: 1rem 1rem;
+    font-size: 0.7rem;
   }
 `;
 const Detail = styled.div`
@@ -130,6 +131,11 @@ const Detail = styled.div`
   @media ${device.mobileL && device.laptop} {
     font-size: 1.1rem;
     margin: 11rem 2rem;
+  }
+  @media ${device.mobileL} {
+    margin: 0;
+    bottom: 1rem;
+    left: 1rem;
   }
 `;
 
@@ -177,8 +183,8 @@ const Card1 = styled.div`
   @media ${device.mobileL} {
     width: 100%;
     border-radius: 1.4rem;
-    min-height: 16rem;
-    background-size: 130% 100%;
+    min-height: 14rem;
+    background-size: 110% 100%;
   }
 `;
 
