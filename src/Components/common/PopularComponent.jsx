@@ -99,12 +99,20 @@ const Wrapper = styled.div`
       justify-content: space-between;
     }
   }
+  @media ${device.mobileL} {
+    margin: 0;
+    padding: 0;
+    margin-top: 3rem;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
+  @media ${device.mobileL} {
+    grid-gap: 1rem;
+  }
 `;
 
 const Card = styled.div`

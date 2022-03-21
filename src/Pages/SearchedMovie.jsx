@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import { device } from '../utils/device';
 import { useNavigate } from 'react-router-dom';
 import { FaStar, FaPlay } from 'react-icons/fa';
 
@@ -63,6 +64,9 @@ const Wrapper = styled.div`
     font-weight: 600;
     color: #333;
     margin-bottom: 2rem;
+  }
+  @media ${device.mobileL} {
+    padding: 1rem;
   }
 `;
 

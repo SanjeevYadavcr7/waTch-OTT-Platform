@@ -71,18 +71,17 @@ const Bar = styled.div`
 const Logo = styled(NavLink)`
   position: absolute;
   top: 10%;
-  @media ${device.mobileL} {
-    top: 1rem;
-    left: 2rem;
-  }
   @media ${device.tablet} {
-    top: 2rem;
-    left: 2rem;
+    left: 1rem;
   }
   @media ${device.laptop} {
     img {
       width: 4rem;
     }
+  }
+  @media ${device.mobileL} {
+    top: 1rem;
+    left: 1.5rem;
   }
 `;
 

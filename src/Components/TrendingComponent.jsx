@@ -95,6 +95,9 @@ const Button = styled.button`
     font-size: 1.3rem;
   }
   cursor: pointer;
+  @media ${device.mobileL} {
+    display: none;
+  }
 `;
 
 const Trending = styled.div`
@@ -109,8 +112,8 @@ const Trending = styled.div`
   @media ${device.tablet} {
     margin: 1rem 1rem;
   }
-  @media ${device.tablet} {
-    margin: 2rem 2rem;
+  @media ${device.mobileL} {
+    margin: 1rem 1rem;
   }
 `;
 const Detail = styled.div`
@@ -126,7 +129,7 @@ const Detail = styled.div`
   }
   @media ${device.mobileL && device.laptop} {
     font-size: 1.1rem;
-    margin: 15rem 2rem;
+    margin: 11rem 2rem;
   }
 `;
 
@@ -164,18 +167,18 @@ const Card1 = styled.div`
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  @media ${device.mobileL} {
-    width: 100%;
-    border-radius: 1.4rem;
-    min-height: 20rem;
-    background-size: 130% 100%;
-  }
   @media ${device.tablet} {
     border-radius: 1.5rem;
   }
   @media ${device.laptop} {
     max-height: 20rem;
     background-size: 120% 130%;
+  }
+  @media ${device.mobileL} {
+    width: 100%;
+    border-radius: 1.4rem;
+    min-height: 16rem;
+    background-size: 130% 100%;
   }
 `;
 

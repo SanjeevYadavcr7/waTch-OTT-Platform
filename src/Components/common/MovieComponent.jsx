@@ -67,7 +67,7 @@ const Wrapper = styled.div`
     border-radius: 2rem;
   }
   @media ${device.mobileL} {
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     img {
       border-radius: 1.2rem;
     }
@@ -104,9 +104,9 @@ const GenreTags = styled.div`
 
 const Tags = styled.div`
   dispaly: flex;
-  min-width: 40%;
+  min-width: auto;
   @media ${device.mobileL} {
-    // border: 1px solid;
+    max-width: 100%;
   }
 `;
 
@@ -123,7 +123,10 @@ const Genre = styled.div`
   float: left;
 
   @media ${device.mobileL} {
-    margin-left: 0.3rem;
+    margin: 0.2rem;
+    float: none;
+    font-size: 0.65rem;
+    display: inline-block;
   }
 `;
 

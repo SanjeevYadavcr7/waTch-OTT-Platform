@@ -41,14 +41,15 @@ const Wrapper = styled.div`
     font-weight: 600;
     color: #444;
   }
-  @media ${device.mobileL} {
-    p {
-      display: none;
-    }
-  }
   @media ${device.tablet && device.laptop} {
     margin-top: 6rem;
     flex-direction: column;
+  }
+  @media ${device.mobileL} {
+    margin-top: 2.5rem;
+    p {
+      display: none;
+    }
   }
 `;
 
@@ -84,6 +85,7 @@ const FormStyle = styled.form`
   }
   @media ${device.mobileL} {
     width: 90%;
+    margin-bottom: 0;
   }
 `;
 
